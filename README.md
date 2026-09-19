@@ -1,5 +1,7 @@
 # Permission Aware Retrieval Evaluation
 
+[Product brief & roadmap](ROADMAP.md) · [Requirements](PRODUCT.md) · [Prioritized backlog](https://github.com/bsaikrishnapm-source/permission-aware-retrieval/issues) · [Run the evaluation](#run-locally)
+
 ## Start here
 
 **Problem:** Check that a knowledge assistant uses only current documents the user is allowed to see.
