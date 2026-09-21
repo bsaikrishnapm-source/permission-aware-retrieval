@@ -1,18 +1,33 @@
 # Permission Aware Retrieval Evaluation
 
+## Interactive product demo — implemented
+
+**Evidence Review:** Structured conflict detection, explicit version precedence, source opening with current demo access checks, local escalation records, and a bounded text-free audit buffer.
+
+### Open the product
+
+1. On this repository, select **Code → Download ZIP**.
+2. Extract the ZIP folder.
+3. Open **demo/index.html** in your browser.
+
+No installation, API key or login is required for the demo. GitHub's Code tab displays source; it does not run HTML applications. Keep the demo folder's files together. This is a local browser experience, not a hosted service.
+
+[Demo walkthrough and architecture](DEMO_GUIDE.md) · [Browser source](demo/index.html) · [Decision logic](demo/engine.js) · [Verification](VALIDATION.md)
+
+
 [Product brief & roadmap](ROADMAP.md) · [Requirements](PRODUCT.md) · [Prioritized backlog](https://github.com/bsaikrishnapm-source/permission-aware-retrieval/issues) · [Run the evaluation](#run-locally)
 
 ## Start here
 
 **Problem:** Check that a knowledge assistant uses only current documents the user is allowed to see.
 
-**What is built:** An independent Python prototype or analysis, with product documents and synthetic data.
+**What is built:** The interactive demo above, plus the original Python case study, product documents and synthetic data.
 
 **Code to run:** `python3 evaluate.py`
 
 **What you will see:** Compares topic-only and permission-aware retrieval across eight queries, counting unauthorized and outdated results.
 
-**Scope:** Runs locally in a terminal. No live customer integration, deployed application, or real AI model call is included.
+**Scope:** Includes a local browser demo plus the original Python command-line analysis. No live customer integration, hosted deployment, or real AI model call is included.
 
 
 **Complete independent prototype | RAG product requirements and retrieval governance**
@@ -60,3 +75,4 @@ python3 export_data.py --output exports
 ```
 
 Creates CSV tables from the bundled synthetic data. The terminal output identifies each table and its row count. For a different JSON file, add `--input path/to/data.json`. Existing table CSV files in the output directory are replaced. These exports contain scenario inputs, not production results.
+

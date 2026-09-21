@@ -1,0 +1,136 @@
+window.DEMO_DATA = {
+  "documents": [
+    {
+      "id": "D1",
+      "topic": "refund",
+      "tenant": "alpha",
+      "roles": [
+        "support"
+      ],
+      "active": true,
+      "text": "Refund requests are eligible within 30 days of purchase.",
+      "version": 1,
+      "policy_key": "refund",
+      "value": "Refund requests are eligible within 30 days of purchase."
+    },
+    {
+      "id": "D2",
+      "topic": "refund",
+      "tenant": "beta",
+      "roles": [
+        "support"
+      ],
+      "active": true,
+      "text": "Refund requests are eligible within 60 days of purchase.",
+      "version": 1,
+      "policy_key": "refund",
+      "value": "Refund requests are eligible within 60 days of purchase."
+    },
+    {
+      "id": "D3",
+      "topic": "refund",
+      "tenant": "alpha",
+      "roles": [
+        "support"
+      ],
+      "active": false,
+      "text": "Archived policy allowed refunds within 90 days.",
+      "version": 1,
+      "policy_key": "refund",
+      "value": "Archived policy allowed refunds within 90 days."
+    },
+    {
+      "id": "D4",
+      "topic": "billing",
+      "tenant": "alpha",
+      "roles": [
+        "finance"
+      ],
+      "active": true,
+      "text": "Invoices are payable within 15 days.",
+      "version": 1,
+      "policy_key": "billing",
+      "value": "Invoices are payable within 15 days."
+    },
+    {
+      "id": "D5",
+      "topic": "password",
+      "tenant": "alpha",
+      "roles": [
+        "support",
+        "finance"
+      ],
+      "active": true,
+      "text": "Use the reset link and verify your identity.",
+      "version": 1,
+      "policy_key": "password",
+      "value": "Use the reset link and verify your identity."
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "topic": "refund",
+      "tenant": "alpha",
+      "role": "support",
+      "expected": [
+        "D1"
+      ]
+    },
+    {
+      "id": "Q2",
+      "topic": "refund",
+      "tenant": "beta",
+      "role": "support",
+      "expected": [
+        "D2"
+      ]
+    },
+    {
+      "id": "Q3",
+      "topic": "billing",
+      "tenant": "alpha",
+      "role": "support",
+      "expected": []
+    },
+    {
+      "id": "Q4",
+      "topic": "billing",
+      "tenant": "alpha",
+      "role": "finance",
+      "expected": [
+        "D4"
+      ]
+    },
+    {
+      "id": "Q5",
+      "topic": "password",
+      "tenant": "alpha",
+      "role": "finance",
+      "expected": [
+        "D5"
+      ]
+    },
+    {
+      "id": "Q6",
+      "topic": "vacation",
+      "tenant": "alpha",
+      "role": "support",
+      "expected": []
+    },
+    {
+      "id": "Q7",
+      "topic": "refund",
+      "tenant": "alpha",
+      "role": "finance",
+      "expected": []
+    },
+    {
+      "id": "Q8",
+      "topic": "password",
+      "tenant": "beta",
+      "role": "support",
+      "expected": []
+    }
+  ]
+};

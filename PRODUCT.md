@@ -17,7 +17,7 @@ A support specialist needs an answer supported by the current policy they are au
 
 Exact-set match checks whether returned IDs equal the expected authorized evidence. Forbidden-hit count detects wrong-tenant or wrong-role material; stale-hit count detects archived content. Coverage is not the release objective if more answers expose forbidden evidence.
 
-The runnable prototype implements criteria 1–3 for structured fixtures. Conflict handling, citation UI, audit logging, and dynamic access revocation remain specified requirements, not implemented services.
+The original Python evaluation implements criteria 1–3 for structured fixtures. The browser demo additionally illustrates structured conflict handling, citation opening with current simulated access checks, and bounded in-memory audit history. These are local demonstrations, not authenticated authorization or audit services. See DEMO_GUIDE.md for implemented behavior and production gaps.
 
 ## Release decision
 
@@ -26,3 +26,4 @@ The guarded policy passes the fixture suite. Keep the product at prototype statu
 ## Next experiment
 
 Create a labeled set of paraphrases, conflicting policies, revoked permissions, and unsupported questions. Compare retrieval precision and abstention with independent reviewers. Freeze the set before changing retrieval logic.
+
