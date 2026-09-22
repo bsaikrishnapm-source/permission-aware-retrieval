@@ -1,5 +1,15 @@
 # Permission Aware Retrieval Evaluation
 
+## Product decision at a glance
+
+**User need:** Help a knowledge user inspect current, authorized evidence before trusting an answer.
+
+**Decision:** Filter evidence by access and version, and abstain when the eligible policies conflict.
+
+**Inspect:** [Requirements and release gates](PRODUCT.md) · [Guided demo](DEMO_GUIDE.md) · [Validation boundaries](VALIDATION.md).
+
+**Evidence:** The original Python evaluation covers eight queries against five synthetic documents. The browser demo adds structured conflicts and simulated access revocation; authenticated server enforcement and semantic retrieval evaluation remain open.
+
 ## Interactive product demo — implemented
 
 **Evidence Review:** Structured conflict detection, explicit version precedence, source opening with current demo access checks, local escalation records, and a bounded text-free audit buffer.
