@@ -1,5 +1,7 @@
 # Permission Aware Retrieval Evaluation
 
+**[▶ Try the live demo](https://bsaikrishnapm-source.github.io/permission-aware-retrieval/demo/)** · runs in your browser · no install, login or API key · synthetic data
+
 ## Product decision at a glance
 
 **User need:** Help a knowledge user inspect current, authorized evidence before trusting an answer.
@@ -16,11 +18,9 @@
 
 ### Open the product
 
-1. On this repository, select **Code → Download ZIP**.
-2. Extract the ZIP folder.
-3. Open **demo/index.html** in your browser.
+**[▶ Open the live demo](https://bsaikrishnapm-source.github.io/permission-aware-retrieval/demo/)** — hosted on GitHub Pages; no installation, API key or login is required.
 
-No installation, API key or login is required for the demo. GitHub's Code tab displays source; it does not run HTML applications. Keep the demo folder's files together. This is a local browser experience, not a hosted service.
+Prefer to run it offline? Select **Code → Download ZIP**, extract the folder and open **demo/index.html** in your browser (keep the demo folder's files together).
 
 [Demo walkthrough and architecture](DEMO_GUIDE.md) · [Browser source](demo/index.html) · [Decision logic](demo/engine.js) · [Verification](VALIDATION.md)
 
@@ -37,7 +37,7 @@ No installation, API key or login is required for the demo. GitHub's Code tab di
 
 **What you will see:** Compares topic-only and permission-aware retrieval across eight queries, counting unauthorized and outdated results.
 
-**Scope:** Includes a local browser demo plus the original Python command-line analysis. No live customer integration, hosted deployment, or real AI model call is included.
+**Scope:** Includes a static browser demo (hosted on GitHub Pages, data stays in your browser) plus the original Python command-line analysis. No live customer integration, backend service or real AI model call is included.
 
 
 **Complete independent prototype | RAG product requirements and retrieval governance**
